@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0009984459, y: -0.13276713, z: 0.00013374482, w: 0.9911468}
-  m_LocalPosition: {x: 1.2141857, y: 4.060595, z: -7.343088}
+  m_LocalPosition: {x: 1.2235212, y: 4.1844997, z: -7.3790627}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 783079884}
   - component: {fileID: 783079883}
   - component: {fileID: 783079882}
+  - component: {fileID: 783079886}
   m_Layer: 0
   m_Name: Level Sprite Shape
   m_TagString: Untagged
@@ -304,7 +305,7 @@ EdgeCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
@@ -1241,6 +1242,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!252 &783079886
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783079881}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 10
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
 --- !u!1 &1478345769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1341,7 @@ Transform:
   m_GameObject: {fileID: 1478345769}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0009984459, y: -0.13276713, z: 0.00013374482, w: 0.9911468}
-  m_LocalPosition: {x: -8.525, y: 4.036, z: -10}
+  m_LocalPosition: {x: -8.377705, y: 4.16, z: -9.998339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1520,31 +1539,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.525
+      value: -8.56
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.036
+      value: 4.16
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9983956
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.00050942745
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.009100944
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.05588539
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1552,11 +1571,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -1.045
       objectReference: {fileID: 0}
     - target: {fileID: 2987838327417605070, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -6.408
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752290390798983435, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
