@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 783079886}
   m_Layer: 0
   m_Name: Level Sprite Shape
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1860,6 +1860,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 934233803435232733, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4842927506186424466}
+    - targetCorrespondingSourceObject: {fileID: 934233803435232733, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4842927506186424470}
   m_SourcePrefab: {fileID: 100100000, guid: 397be0415eede124f819a0b5efa0ce68, type: 3}
 --- !u!1 &4842927506186424465 stripped
 GameObject:
@@ -1879,6 +1882,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _torqueAmount: 8
+--- !u!114 &4842927506186424470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4842927506186424465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a22a98c8408c8445987ca3ecc0402ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

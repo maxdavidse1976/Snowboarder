@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D _rigidbody;
     [SerializeField] float _torqueAmount = 1f;
+    CircleCollider2D _headCollider;
+    Rigidbody2D _rigidbody;
 
-    void Start()
+    void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _headCollider = GetComponent<CircleCollider2D>();
     }
 
     void Update()
