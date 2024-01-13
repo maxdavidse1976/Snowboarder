@@ -7,8 +7,7 @@ public class FinishLine : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("You finished!");
-            //SceneManager.LoadScene("");
+            SceneManager.LoadScene("Slope_01");
         }
     }
 }
