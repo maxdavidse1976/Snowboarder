@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     CircleCollider2D _headCollider;
     Rigidbody2D _rigidbody;
     SurfaceEffector2D _surfaceEffector2D;
+    bool _controlsDisabled = false;
 
     void Awake()
     {
@@ -20,8 +21,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        RotatePlayer();
-        RespondToBoost();
+        if (!_controlsDisabled)
+        {
+            RotatePlayer();
+            RespondToBoost();
+        }
+    }
+
+    public void DisableControls()
+    {
+        _controlsDisabled = true;
     }
 
     void RespondToBoost()
